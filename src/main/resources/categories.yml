@@ -1,0 +1,8 @@
+categories:
+  rules:
+    default: true
+    '1':
+    - '&21) No bigotry.'
+    - '&22) No dupes.'
+    - '&23) Avoid lag.'
+    - '&24) Be decent.'

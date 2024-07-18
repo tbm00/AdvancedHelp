@@ -1,0 +1,25 @@
+name: AdvancedHelp
+main: me.codedred.advancedhelp.AdvancedHelp
+ # keeping author as 'Cmaaxx' for Metrics purposes.
+author: Cmaaxx
+authors: [CodedRed, tbm00]
+version: ${project.version}
+api-version: 1.13
+softdepend: [PlaceholdersAPI, HeadDatabase, PlaceholderAPI]
+loadbefore: [Essentials, CMI, EssentialsX]
+
+commands:
+  help:
+    description: Use /help to see the help section.
+    usage: /<command>
+    permission: help.use
+    aliases: [ehelp]
+  ?:
+    description: Use /? to see the help section.
+    usage: /<command>
+    permission: help.use
+  ahelp:
+    description: Admin help for AdvancedHelp.
+    usage: /<command>
+    permission: help.reload
+    aliases: [advancedhelp]

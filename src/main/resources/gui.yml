@@ -1,0 +1,106 @@
+gui:
+  main-page:
+    title: '&eHelp GUI'
+    slots: 18
+    close-button: 14
+    items:
+      '1':
+        item-name: '&6Factions'
+        item-material: DIAMOND_SWORD
+        enchanted: true
+        lore:
+        - '&6Click to see Factions&6 help!'
+        item-slot: 3
+        run: GUI
+        value: factions
+      '2':
+        item-name: '&aSkyblock'
+        item-material: GRASS_BLOCK
+        item-amount: 10
+        enchanted: true
+        lore:
+        - '&aClick to see Skyblock &ahelp!'
+        item-slot: 5
+        run: GUI
+        value: skyblock
+      '3':
+        item-name: '&bEconomy'
+        item-material: DIAMOND_BLOCK
+        enchanted: true
+        lore:
+        - '&bClick to see Economy &bhelp!'
+        item-slot: 7
+        run: GUI
+        value: economy
+  factions:
+    title: '&6Factions GUI'
+    slots: 27
+    home-button: 23
+    items:
+      '1':
+        item-name: '&cRules'
+        item-material: PAPER
+        enchanted: true
+        lore:
+        - '&cClick to view the rules!'
+        item-slot: 12
+        run: CATEGORY
+        value: faction-rules
+      '2':
+        item-name: '&aftop'
+        item-material: WOODEN_SWORD
+        enchanted: true
+        lore:
+        - '&aClick to view ftop!'
+        item-slot: 16
+        run: PLAYER-CMD
+        value:
+        - ftop
+  skyblock:
+    title: '&aSkyblock GUI'
+    slots: 27
+    home-button: 23
+    items:
+      '1':
+        item-name: '&cRules'
+        item-material: PAPER
+        enchanted: true
+        lore:
+        - '&cClick to view the rules!'
+        item-slot: 12
+        run: CATEGORY
+        value: skyblock-rules
+      '2':
+        item-name: '&5Skyblock Cmd'
+        item-material: SAND
+        enchanted: true
+        lore:
+        - '&aClick to run skyblock command!'
+        item-slot: 16
+        run: PLAYER-CMD
+        value:
+        - ss
+  economy:
+    title: '&bEconomy GUI'
+    slots: 27
+    home-button: 23
+    items:
+      '1':
+        item-name: '&cRules'
+        item-material: PAPER
+        enchanted: true
+        lore:
+        - '&cClick to view the rules!'
+        item-slot: 12
+        run: PAGE
+        value: 1
+      '2':
+        item-name: '&3Change Weather'
+        item-material: GLASS
+        enchanted: true
+        lore:
+        - '&aClick to change the weather!'
+        item-slot: 16
+        run: CONSOLE-CMD
+        value:
+        - weather world clear
