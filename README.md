@@ -12,14 +12,13 @@ A spigot plugin that adds a custom /help command, with pages, categories, and GU
 - **Spigot 1.18.1+**: UNTESTED ON OLDER VERSIONS
 
 ## Stream Changelog
-- ***This* plugin:** https://github.com/tbm00/ExtractableEnchantments
+- ***This* plugin:** https://github.com/tbm00/AdvancedHelp
 
     v1.13
     - updated to Java 17
     - updated PlaceholderAPI
     - fixed deprecated methods
-    - refactored directory structure
 
-- **Parent:** https://github.com/OfficialRell/ExtractableEnchantments/
+- **Parent:** https://github.com/CodedRed-Spigot/AdvancedHelp
 
-    v1.12.7 / v1.12.8 (inconsitently versioning), commit `d8c75f4`
+    v1.12.7 / v1.12.8 (inconsitently versioning), commit `d878395`
