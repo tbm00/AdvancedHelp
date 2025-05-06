@@ -4,7 +4,7 @@ main: me.codedred.advancedhelp.AdvancedHelp
 author: Cmaaxx
 authors: [CodedRed, tbm00]
 version: ${project.version}
-api-version: 1.13.1-MC64
+api-version: 1.13
 softdepend: [PlaceholdersAPI, HeadDatabase, PlaceholderAPI]
 loadbefore: [Essentials, CMI, EssentialsX]
 
