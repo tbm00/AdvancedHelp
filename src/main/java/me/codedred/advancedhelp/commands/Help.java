@@ -4,7 +4,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -59,36 +58,7 @@ public class Help implements CommandExecutor, Listener {
 			 * '/help'
 			 */
 			if (args.length == 0) {
-				if (CONFIG.getBoolean("gui.enabled")) {
-					if (sender instanceof Player) {
-						Player player = (Player) sender;
-						if (CONFIG.getBoolean("refresh-guis")) 
-							if (plugin.directory.hasMainInventory(player.getName()))
-								plugin.directory.inventoryViewer.removeMenu(player.getName());
-						menu.create(player);
-						return true;
-					}
-				}
-				if (!PAGES.contains("pages.1")) {
-					sender.sendMessage(ChatColor.RED + "No help pages created!");
-					return true;
-				}
-				for (String msg : PAGES.getStringList("pages.1")) {
-					if (plugin.hasPAPI() && sender instanceof Player) {
-						Player player = (Player) sender;
-						msg = PlaceholdersUtil.setPlaceholders(player, msg);
-					}
-					 if (msg.contains("{\"text\":")) {
-						 if (sender instanceof Player) {
-						 Player player = (Player) sender;
-						 Bukkit.dispatchCommand(Bukkit.getConsoleSender(), ("tellraw " + player.getName() + " " +  msg)
-								 .replace("%player%", sender.getName()).replace("%time%", format.format(now))); 
-						 } else
-							 sender.sendMessage("This message contains JSON text that cannot be sent to the console.");
-					 }
-					 if (!msg.contains("{\"text\":"))
-						 sender.sendMessage(plugin.format(msg).replace("%player%", sender.getName()).replace("%time%", format.format(now)));  
-				}
+				Bukkit.dispatchCommand(sender, "zzz");
 				return true;
 			}
 			/**
