@@ -14,7 +14,7 @@ A spigot plugin that adds a custom /help command, with pages, categories, and GU
 ## Stream Changelog
 - ***This* plugin:** https://github.com/tbm00/AdvancedHelp
 
-    v1.13
+    v1.13.1-MC64
     - updated to Java 17
     - updated PlaceholderAPI
     - fixed deprecated methods
